@@ -10,5 +10,4 @@ def main(d):
 
 def eval(i, d) -> bool: a, b, c = i; return {'>': lambda a, b: d[a] > d[b], '<': lambda a, b: d[a] < d[b], '=': lambda a, b: d[a] == d[b]}[b](a, c)
 
-if __name__ == '__main__':
-    main({})
+if __name__ == '__main__': main({})

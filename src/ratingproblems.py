@@ -1,4 +1,3 @@
 # https://open.kattis.com/problems/ratingproblems
 
-n, k = map(int, input().split()); r = sum([int(input()) for _ in range(k)])
-print(((-3*(n-k)+r) / n), ((3*(n-k)+r)/n))
+import sys; print(*(lambda n, k, r: [(-3*(n-k)+r) / n, (3*(n-k)+r)/n])(*map(int, input().split()), sum([int(x) for x in sys.stdin.readlines()])))
